@@ -42,13 +42,13 @@ To run the benchmarks, one needs to move to the corresponding directory and foll
 
 I could not find a way to run grouped functions in _Divan_. Moreover, I have failed toto run a `AsyncExecutor` -based benchmark in __Divan_. May be an way exists, but I haven't explored further. Here's _Divan_ 's output:
 
-![Sample output](/home/nirmalya/Workspace-Rust/naturall-e-computation/Comparison-between-Handrolled-Parallel-Iteration.png "cargo-bench-output.png").
+![Sample output](./Comparison-between-Handrolled-Parallel-Iteration.png "cargo-bench-output.png").
 
 _Criterion_ allows us to group functions for easier comparison and its HTML reports are quite comprehensive. Moreover, it facilitates running AsyncExecutor-based tasks, viz., Tokio's. So, a three-way comparison is possible. 
 
 Unsurpisingly, Rayon's Parallel Iterator facility works the best amongst the three.  The computation is great fit for data parallelization. Interestingly, Tokio's tasks perform reasonably well, given that its tasks are primarily meant for asynchronous I/O tasks.
 
-<img title="cargo-bench-output.png" src="file:///home/nirmalya/Workspace-Rust/naturall-e-computation/Comparison-Response-1000000-Iterations.png" alt="Sample output" width="145" data-align="center">.
+<img title="cargo-bench-output.png" src="./Comparison-Response-1000000-Iterations.png" alt="Sample output" width="145" data-align="center">.
 
 ### Discloure
 
