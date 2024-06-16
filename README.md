@@ -1,10 +1,7 @@
 ### Background
 
-A few weeks back, in the Rust Programming Language [channel](https://www.linkedin.com/groups/4973032/) on LinkedIn, 
-Ethan Barry (LinkedIn: https://www.linkedin.com/in/ethanbarry/) did a post, celebrating a fascinating quirk of 
-mathematics (one amongst uncountable such): an iterative computation  seemingly unrelated to `'e'` , converges 
-towards it, as the number of iterations in the computation increases. Here is the link to the [post](https://www.linkedin.com/feed/update/urn:li:activity:7197299671013154817/) and subsequent 
-discussion. For more the _Mathy_ amongst us, here is the link to [Wikipedia]( [e (mathematical constant) - Wikipedia]
+A few weeks back, in a [post](https://www.linkedin.com/feed/update/urn:li:activity:7197299671013154817/) in the Rust Programming Language [channel](https://www.linkedin.com/groups/4973032/) on LinkedIn, Ethan Barry (LinkedIn: https://www.linkedin.com/in/ethanbarry/) did a post, celebrating a fascinating quirk of 
+mathematics (one amongst uncountable such): an iterative computation  seemingly unrelated to `'e'` , converges towards it, as the number of iterations in the computation increases. Here is the link to the [post](https://www.linkedin.com/feed/update/urn:li:activity:7197299671013154817/) and subsequent discussion. For more the _Mathy_ amongst us, here is the link to [Wikipedia]( [e (mathematical constant) - Wikipedia]
 (https://en.wikipedia.org/wiki/E_(mathematical_constant)#Stochastic_representations))) where this behaviour is described. 
 
 Amongst those who left their comments in the thread, Sergei Blinov (LinkedIn: https://www.linkedin.com/in/awnion/) offered an alternative way to compute the same, but using functional constructs and `rayon`'s parallel iterator facility. 
